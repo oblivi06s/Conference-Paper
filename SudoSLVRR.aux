@@ -8,20 +8,36 @@
 \citation{mo2022}
 \citation{yang2015}
 \citation{randall2002}
+\providecommand \oddpage@label [2]{}
 \@writefile{toc}{\contentsline {title}{SudoSLVRR: A Multithreaded Multi-Colony Ant Optimization with Ring and Random Communication Topologies as Sudoku Solver}{1}{}\protected@file@percent }
 \@writefile{toc}{\authcount {3}}
 \@writefile{toc}{\contentsline {author}{John Michael E. Jabuen \and Gian Myrl Renomeron \and \unskip \ \ignorespaces John Paul T. Yusiong}{1}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Works}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}SudoSLVRR: Algorithm Design and Structure}{3}{}\protected@file@percent }
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces SudoPHASE (Part 1)}}{3}{}\protected@file@percent }
+\newlabel{alg:mtcpacssaalgo_part1}{{1}{3}{}{algocf.1}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces SudoPHASE (continued)}}{4}{}\protected@file@percent }
+\newlabel{alg:mtcpacssaalgo_part2}{{1}{4}{}{algocf.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Initial Constraint Propagation}{4}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces AI Escargot Sudoku puzzle (left), and the result after CP (right). The value sets are represented as strings of allowable digit for a certain cell. For example, `2568' represents the set of values 2,5,6,8.}}{5}{}\protected@file@percent }
+\newlabel{CP_output}{{1}{5}{}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}DCM-ACO}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Pheromone Matrix Initialization}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Ant Solution Construction}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Ant Decision Rule}{5}{}\protected@file@percent }
 \bibcite{dorigo1992}{1}
+\@writefile{toc}{\contentsline {subsubsection}{Propagate Constraints}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Local Pheromone Update}{6}{}\protected@file@percent }
+\newlabel{eqn:localpheromoneupdate}{{2}{6}{}{equation.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Solution Evaluation and Iteration-Best Selection}{6}{}\protected@file@percent }
+\newlabel{eqn:iteration-best-ant}{{3}{6}{}{equation.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Pheromone Contribution Calculation}{6}{}\protected@file@percent }
+\newlabel{eqn:phertoadd}{{4}{6}{}{equation.4}{}}
 \bibcite{yang2015}{2}
 \bibcite{lloyd2020}{3}
 \bibcite{mo2022}{4}
 \bibcite{manyam2024}{5}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Related Works}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3}SudoSLVRR: Algorithm Design and Structure}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Dataset}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Results and Discussion}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusions and Future Work}{2}{}\protected@file@percent }
 \bibcite{pacurib2009}{6}
 \bibcite{randall2002}{7}
 \bibcite{SSAS}{8}
@@ -35,8 +51,10 @@
 \bibcite{mantere2007solving}{16}
 \bibcite{dorigo2004ant}{17}
 \bibcite{pedemonte2011bit}{18}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Results and Discussion}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusions and Future Work}{7}{}\protected@file@percent }
 \bibcite{talbi2009metaheuristics}{19}
 \bibcite{Schott}{20}
 \bibcite{GPSO}{21}
 \bibcite{bhattarai2025study}{22}
-\gdef \@abspage@last{3}
+\gdef \@abspage@last{8}

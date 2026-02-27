@@ -1,4 +1,170 @@
 \section{SudoSLVRR: Algorithm Design and Structure}
 
-\subsection{Dataset}
+\begin{algorithm}[H]
+\LinesNumbered
+\footnotesize
+\caption{SudoPHASE (Part 1)}
+\label{alg:mtcpacssaalgo_part1}
+\KwIn{Sudoku puzzle $P$}
+\KwIn{Parameters: $\tau_0$, $E(p)*$, $Con*$, $timeout$}
+\KwOut{Solved Sudoku puzzle}
+
+read puzzle P\;
+
+\ForAll{cells with fixed values}{
+    propagate constraints\; \tcp*[f]{Initial constraint propagation}
+}
+\ForAll{colony}{
+    initialize pheromone matrix $\tau_{ij} \leftarrow \tau_0$\;
+}
+$iter \leftarrow 0$\;
+
+\While{puzzle is not solved \textbf{and} timeout not reached}{
+
+    \ForAll{threads \textbf{in parallel}}{
+        give each ant a local copy of the puzzle\;
+        assign each ant to a different cell\;
+
+        \For{number of cells}{
+            \For{each colony}{
+                \For{each ant}{
+                    \If{current cell value not fixed}{
+                        choose value from current cell's value set\;
+                        fix cell value\;
+                        propagate constraints\;
+                        update local pheromone using Equation (\ref{eqn:localpheromoneupdate})\;
+                    }
+                    move to next cell\;
+                }
+            }
+        }
+        \For{each colony}{
+            find the iteration-best in thread using Equation (\ref{eqn:iteration-best-ant})\;
+            calculate the pheromone to add, $\Delta\tau$, using Equation (\ref{eqn:phertoadd})\;
+
+            \If{$\Delta\tau$ iteration-best $>$ global-iteration-best pheromone}{
+                set global-iteration-best solution to iteration-best solution\;
+                set $\Delta\tau$ global-iteration-best to $\Delta\tau$ iteration-best\;
+            }
+        
+            \If{$\Delta\tau$ iteration-best $>$ $\Delta\tau$ best-so-far}{
+                set best-so-far to iteration-best\;
+                set $\Delta\tau$ best-so-far to $\Delta\tau$ iteration-best\;
+            }
+
+            \If{$\Delta\tau$ best-so-far $>$ $\Delta\tau$ global-best-so-far}{
+                set global-best-so-far to $\Delta\tau$ best-so-far\;
+                set global-best-so-far to best-so-far\;
+            }
+        }
+
+        \tcp{Apply Dynamic Collaborative Mechanism (DCM-ACO)}
+        divide ACS colonies into low-entropy and high-entropy groups using $E(p)*$\;
+        
+        \If{low-entropy ACS group is not empty}{
+            apply pheromone fusion with MMAS colony\;
+        }
+        
+        \If{high-entropy ACS group is not empty}{
+            allocate and update pheromone using cooperative game theory\;
+        }
+
+        calculate convergence speed for the MMAS colony\;
+        \eIf{convergence speed $<$ $Con*$}{
+            apply public path recommendation from ACS colonies\;
+        }{
+            update pheromone for the MMAS colony\;
+        }
+    }
+    \tcp{Algorithm continues on the next page...}
+}
+\end{algorithm}
+
+\begin{algorithm}[H]
+\LinesNumbered
+\footnotesize
+\addtocounter{algocf}{-1} % Prevents the Algorithm number from increasing (Keeps it as Algorithm 1)
+\setcounter{AlgoLine}{53} % Resumes the line numbering (Adjust this number if your lines shift!)
+\caption{SudoPHASE (continued)}
+\label{alg:mtcpacssaalgo_part2}
+
+\While{puzzle is not solved \textbf{and} timeout not reached (continued)}{
+    \tcp{...continued from previous page}
+    
+    \eIf{communication interval is reached}{
+        synchronize all threads at barrier\;
+        generate random matching array\;
+        exchange iteration-best solutions using ring topology\;
+        exchange best-so-far solutions using random topology\;
+        perform global pheromone update using Equation (\ref{eqn:mtglobalupdate})\;
+    }{
+        perform global pheromone update using Equation (\ref{eqn:stdglobalupdate})\;
+        perform best value evaporation using Equation (\ref{eq:best_evaporation})\;
+    }
+
+    increment $iter$\;
+}
+\end{algorithm}
+
+\subsection{Initial Constraint Propagation}
+Sudoku has a large solution space and navigating through it requires time. Constraint propagation by its heuristic characteristics narrowed down the solution space. It scans the board and filters out invalid cell-value assignments according to the constraints of Sudoku. Though CP is again called during the solution construction of ants, this preprocessing mechanism allows the ants from each thread to prevent wasting CPU time in trying invalid cell-value assignments. 
+
+CP removes invalid assignments using the fixed values (clues) on the puzzle. It implements two rules to systematically prune the solution space. Every cell has its own candidate values and belongs to a specific row, column, and subgrid. Rule 1 collects all fixed values from a certain row, column, and subgrid and removes this set of fixed values from the candidate values of the cell belonging to the same row, column, and subgrid. If there is only one remaining value, CP fixes that value to that cell. The second rule is responsible for fixing hidden singles to a cell. The cell is known to have a hidden single when there is only one remaining value on its candidate values after removing all the candidate values of its peers (cells that reside to the same row, column, and subgrid). This process is recursively done until no further deduction can be made. 
+
+By doing this, the puzzle is reduced and the search space is narrowed as the number of fixed cells has increased. However, it is important to note that because of this recursive deduction, there are cells that will be left with no candidate values anymore and it is called “fail cells”. The algorithm counts these “fail cells” and will be subtracted from the number of cells filled by the ants to quantify the quality of the constructed solution. 
+
+    \begin{figure}[H]
+        \includegraphics[width=0.7\textwidth]{images/CP_Output.png}
+        \centering
+        \caption{AI Escargot Sudoku puzzle (left), and the result after CP (right). The value sets are represented as strings of allowable digit for a certain cell. For example, `2568' represents the set of values 2,5,6,8.}\label{CP_output}
+    \end{figure}
+
+\subsection{DCM-ACO}
+The multi-colony ant optimization for SudoSLVRR is composed of ACS and MMAS colonies. Ant Colony System (ACS) is known for its rapid convergence while Min-Max Ant System has its strong exploratory characteristics. Thus, the two colonies balance the exploitation and exploration mechanism of the algorithm by sharing pheromone information. 
+
+\subsubsection{Pheromone Matrix Initialization}
+Since the algorithm is composed of multiple colonies, it maintains a pheromone matrix for each colony $\tau{ij}$ where $i$ represents the index of the cell and $j$ represents the candidate value from the candidate set $\{ 1, 2, 3, \dots, d \}$. For a $9 \times 9$ Sudoku puzzle, $d = 9$ denotes the dimension of the Sudoku puzzle. All the values in the pheromone matrix are initialized to the same value given by 
+\begin{equation}
+    \tau_0 = \frac{1}{c}
+\end{equation}
+
+where $c = d^2$ represents the total number of cells in the puzzle. 
+
+\subsubsection{Ant Solution Construction}
+The resulting board from the initial constraint propagation is given to each ant to have their own local copy of the board (Line 8).  Each ant starts at a random starting cell (Line 9) and moves to the next cell following the left-to-right direction until it goes back to the starting cell (Line 10).
+
+\subsubsection{Ant Decision Rule}
+At each visited cell, an ant must choose a value for this cell (Line 14). The greediness of the ant in the ACS colony is determined by the parameter $q_{0}$. When a random number $r \in [0, 1]$ is less than $q_{0}$, then the ant acts greedily, choosing the value with the highest pheromone concentration from the candidate values of the cell. Otherwise, the ant performs roulette wheel selection where probabilities of choosing a value is determined by its pheromone concentration. This selection gives the value a chance even with less pheromone concentration to be fixed for the cell. 
+The ants in MMAS colony always perform roulette wheel selection highlighting its exploratory characteristics. Therefore, the $q_{0}$ in this colony is set to $0$. 
+
+\subsubsection{Propagate Constraints}
+Propagate Constraints
+After the ant decides what to fix into the cell (Line 15), it calls the CP to propagate the changes (Line 16). The CP, again, performs the previously discussed rules in removing invalid cell-value assignments. This propagation ensures that every step the ants make is valid while narrowing down the solution space. 
+
+\subsubsection{Local Pheromone Update}
+To reduce the probability of the certain value of being chosen again, ants perform local pheromone update (Line 17). This update reduces the pheromone concentration of the previously chosen value, encouraging the subsequent ants to explore other values for the cell. The new pheromone concentration is given by:
+\begin{equation}
+    \tau_{ij} \leftarrow (1-\xi) \cdot \tau_{ij} + \xi \cdot \tau_0
+\label{eqn:localpheromoneupdate}
+\end{equation}
+where $\xi = 0.1$. 
+
+\subsubsection{Solution Evaluation and Iteration-Best Selection}
+ After all ants have constructed their solution, the algorithm quantifies the quality of the solution produced by each ant. The iteration-best ant is the ant who has the highest number of filled cells (Line 18). 
+At each iteration, every ant $n$ of the $m$ ants records the total number of cells it was able to fill, $f_n$. The algorithm compares these scores and sets the $f_{best}$ with the maximum number of filled cells: 
+\begin{equation}
+    f_{\text{best}} = \max_{n \in \{1 \dots m\}} f_n.
+    \label{eqn:iteration-best-ant}
+\end{equation}
+
+\subsubsection{Pheromone Contribution Calculation}
+The algorithm calculates the pheromone contribution of the iteration-best solution according to \begin{equation}
+    \Delta\tau = \frac{\textit{c}}{\textit{c} - f_{\text{best}}}
+    \label{eqn:phertoadd}
+\end{equation}
+The value of the computed $\Delta\tau$ is compared with the current contribution of the best-so-far, $\Delta \tau_{best}$, (with an initial value of 0). If $\tau$ is greater than the $\Delta \tau_{best}$, then the algorithm set $\Delta \tau_{\text{best}} \leftarrow \Delta \tau$
+Followed by replacing the current best-so-far solution with the iteration-best solution.
+
+
+
 
