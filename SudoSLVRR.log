@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.11)  27 FEB 2026 15:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.11)  28 FEB 2026 16:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -512,6 +512,35 @@ Package: listings 2025/10/06 1.11 (Carsten Heinz)
         2025/10/06 1.11 (Carsten Heinz)
     so I'm assuming it got fixed.
 
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\
+booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen192
+\lightrulewidth=\dimen193
+\cmidrulewidth=\dimen194
+\belowrulesep=\dimen195
+\belowbottomsep=\dimen196
+\aboverulesep=\dimen197
+\abovetopsep=\dimen198
+\cmidrulesep=\dimen199
+\cmidrulekern=\dimen256
+\defaultaddspace=\dimen257
+\@cmidla=\count340
+\@cmidlb=\count341
+\@aboverulesep=\dimen258
+\@belowrulesep=\dimen259
+\@thisruleclass=\count342
+\@lastruleclass=\count343
+\@thisrulewidth=\dimen260
+)
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/multirow\
+multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip75
+\multirow@cntb=\count344
+\multirow@dima=\skip76
+\bigstrutjot=\dimen261
+)
 (C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/listings\
 lstlang1.sty
 File: lstlang1.sty 2025/10/06 1.11 listings language file
@@ -519,38 +548,38 @@ File: lstlang1.sty 2025/10/06 1.11 listings language file
 (C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/l3backend
 \l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count340
+\l__color_backend_stack_int=\count345
 ) (SudoSLVRR.aux)
 \openout1 = `SudoSLVRR.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 
 (C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/context/base/mk
 ii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count341
-\scratchdimen=\dimen192
+\scratchcounter=\count346
+\scratchdimen=\dimen262
 \scratchbox=\box115
-\nofMPsegments=\count342
-\nofMParguments=\count343
+\nofMPsegments=\count347
+\nofMParguments=\count348
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count344
-\MPscratchDim=\dimen193
-\MPnumerator=\count345
-\makeMPintoPDFobject=\count346
+\MPscratchCnt=\count349
+\MPscratchDim=\dimen263
+\MPnumerator=\count350
+\makeMPintoPDFobject=\count351
 \everyMPtoPDFconversion=\toks31
 )
 (C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-
@@ -563,62 +592,60 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count347
- (sections/introduction.tex
-
-LaTeX Warning: Citation ` GPSO' on page 1 undefined on input line 2.
-
-[1
+\c@lstlisting=\count352
+ (sections/introduction.tex [1
 
 {C:/Users/John Michael Jabuen/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
-]) (sections/related_works.tex) (sections/sudoslvr_algorithm.tex [2]
-Overfull \vbox (99.75703pt too high) has occurred while \output is active []
+])
+(sections/sudoslvr_algorithm.tex
 
+LaTeX Warning: Float too large for page by 72.42427pt on input line 82.
 
-[3]
-
-LaTeX Warning: Reference `eqn:mtglobalupdate' on page 4 undefined on input line
- 107.
-
-
-LaTeX Warning: Reference `eqn:stdglobalupdate' on page 4 undefined on input lin
-e 107.
-
-
-LaTeX Warning: Reference `eq:best_evaporation' on page 4 undefined on input lin
-e 107.
-
+[2] [3]
 <images/CP_Output.png, id=28, 839.135pt x 423.5825pt>
 File: images/CP_Output.png Graphic file (type png)
 <use images/CP_Output.png>
-Package pdftex.def Info: images/CP_Output.png  used on input line 117.
+Package pdftex.def Info: images/CP_Output.png  used on input line 116.
 (pdftex.def)             Requested size: 242.98541pt x 122.6548pt.
-[4] [5 <./images/CP_Output.png>]
+ [4 <./images/CP_Output.png>] [5]
 Overfull \hbox (13.52446pt too wide) in paragraph at lines 161--161
  \T1/cmr/bx/n/10 Pheromone Con-tri-bu-tion Cal-cu-la-tion[] \T1/cmr/m/n/10 The 
 al-go-rithm cal-cu-lates the pheromone
  []
 
-) (sections/results_discussion.tex) (sections/conclusions.tex) [6]
-Underfull \hbox (badness 2165) in paragraph at lines 89--90
+[6] [7]
+<images/Public_Path.png, id=54, 914.41624pt x 312.16624pt>
+File: images/Public_Path.png Graphic file (type png)
+<use images/Public_Path.png>
+Package pdftex.def Info: images/Public_Path.png  used on input line 261.
+(pdftex.def)             Requested size: 242.98541pt x 82.94753pt.
+ [8 <./images/Public_Path.png>]
+<images/Topologies.png, id=59, 1125.20375pt x 378.41376pt>
+File: images/Topologies.png Graphic file (type png)
+<use images/Topologies.png>
+Package pdftex.def Info: images/Topologies.png  used on input line 289.
+(pdftex.def)             Requested size: 242.98541pt x 81.71536pt.
+) (sections/results_discussion.tex
+[9 <./images/Topologies.png>] [10]) (sections/conclusions.tex) [11]
+Underfull \hbox (badness 2165) in paragraph at lines 92--93
 []\T1/cmr/m/n/9 Y. Manyam, S. Sun-daram, and A. Sa-hay, ``Su-doku Solver Al-go-
 rithms: A
  []
 
 
-Underfull \hbox (badness 1975) in paragraph at lines 89--90
+Underfull \hbox (badness 1975) in paragraph at lines 92--93
 \T1/cmr/m/n/9 Com-par-a-tive Anal-y-sis,'' in \T1/cmr/m/it/9 2024 First In-ter-
 na-tional Con-fer-ence for Women
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--90
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 \T1/cmr/m/it/9 in Com-put-ing (In-CoWoCo)\T1/cmr/m/n/9 , IEEE, 2024, pp. 1--9. 
 [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 7486) in paragraph at lines 107--108
+Underfull \hbox (badness 7486) in paragraph at lines 110--111
 []\T1/cmr/m/n/9 E. C. Chi, ``Tech-niques for Solv-ing Su-doku Puz-zles,'' \T1/c
 mr/m/it/9 arXiv preprint
  []
@@ -629,42 +656,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--114
 . Avail-able:
  []
 
-[7]
-Underfull \hbox (badness 1783) in paragraph at lines 137--138
+
+Underfull \hbox (badness 1783) in paragraph at lines 126--127
 []\T1/cmr/m/n/9 A. Moraglio and J. To-gelius, ``Ge-o-met-ric par-ti-cle swarm o
 p-ti-miza-tion for
  []
 
 
-Underfull \hbox (badness 1831) in paragraph at lines 137--138
+Underfull \hbox (badness 1831) in paragraph at lines 126--127
 \T1/cmr/m/n/9 the su-doku puz-zle,'' in \T1/cmr/m/it/9 Pro-ceed-ings of the 9th
  An-nual Con-fer-ence on Ge-
  []
 
 
-Underfull \hbox (badness 1132) in paragraph at lines 137--138
+Underfull \hbox (badness 1132) in paragraph at lines 126--127
 \T1/cmr/m/it/9 netic and Evo-lu-tion-ary Com-pu-ta-tion\T1/cmr/m/n/9 , 2007, pp
 . 118--125. [On-line]. Avail-able:
  []
 
-[8] (SudoSLVRR.aux)
+[12] (SudoSLVRR.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-10-24>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 5349 strings out of 467871
- 83252 string characters out of 5411563
- 696402 words of memory out of 5000000
- 34164 multiletter control sequences out of 15000+600000
+ 5513 strings out of 467871
+ 86189 string characters out of 5411563
+ 739762 words of memory out of 5000000
+ 34323 multiletter control sequences out of 15000+600000
  643025 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,27n,65p,1886b,714s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,27n,65p,1690b,752s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\John Michael Jabuen\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/
 ec/dpi600\ecti1000.pk> <C:\Users\John Michael Jabuen\AppData\Local\MiKTeX\fonts
 /pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\John Michael Jabuen\AppDat
@@ -682,23 +705,27 @@ ata\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\John
  Michael Jabuen\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm100
 0.pk> <C:\Users\John Michael Jabuen\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
 en/ec/dpi600\ecbx1440.pk><C:/Users/John Michael Jabuen/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/John Michael Jabuen/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users
-/John Michael Jabuen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmmi7.pfb><C:/Users/John Michael Jabuen/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/John Michael Jabuen/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/John Michael
- Jabuen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><
-C:/Users/John Michael Jabuen/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmr7.pfb><C:/Users/John Michael Jabuen/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/John Michael Jabuen/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/John 
-Michael Jabuen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
-y7.pfb><C:/Users/John Michael Jabuen/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmsy9.pfb>
-Output written on SudoSLVRR.pdf (8 pages, 300460 bytes).
+iKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/John Michael Jabuen/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/User
+s/John Michael Jabuen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmmi5.pfb><C:/Users/John Michael Jabuen/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/John Michael Jabuen/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/John Michae
+l Jabuen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb
+><C:/Users/John Michael Jabuen/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmr10.pfb><C:/Users/John Michael Jabuen/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/John Michael Jabuen/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/John
+ Michael Jabuen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+r7.pfb><C:/Users/John Michael Jabuen/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmr9.pfb><C:/Users/John Michael Jabuen/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/John Michael Jabue
+n/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Us
+ers/John Michael Jabuen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmsy9.pfb>
+Output written on SudoSLVRR.pdf (12 pages, 479676 bytes).
 PDF statistics:
- 538 PDF objects out of 1000 (max. 8388607)
+ 584 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
