@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1772266498.09976 "c:/Users/John Michael Jabuen/Documents/Soduko Solver/Conference-Paper/SudoSLVRR.tex" "SudoSLVRR.pdf" "SudoSLVRR" 1772266499.3247 0
+["pdflatex"] 1772269734.91903 "c:/Users/John Michael Jabuen/Documents/Soduko Solver/Conference-Paper/SudoSLVRR.tex" "SudoSLVRR.pdf" "SudoSLVRR" 1772269736.22392 0
   "C:/Users/John" 1755480650 19047 00c3fb1e8db063761073164ffd55ac61 ""
   "C:/Users/John " 1755480650 19047 00c3fb1e8db063761073164ffd55ac61 ""
   "C:/Users/John Michael Jabuen/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1772093080 82535 0266753fb37a3d673c1d739765ad059f ""
@@ -91,7 +91,7 @@
   "C:/Users/John Michael Jabuen/AppData/Local/Programs/MiKTeX/tex/latex/relsize/relsize.sty" 1365244030 15542 c4cc3164fe24f2f2fbb06eb71b1da4c4 ""
   "C:/Users/John Michael Jabuen/AppData/Local/Programs/MiKTeX/tex/latex/tools/multicol.sty" 1761901070 33142 efe8f4750fc02524935e7423b4bdef69 ""
   "C:/Users/John Michael Jabuen/AppData/Local/Programs/MiKTeX/tex/latex/tools/xspace.sty" 1761901070 4545 d7bb86d489a8ad5263e4c34304c03aee ""
-  "SudoSLVRR.aux" 1772266498 5891 67c396bbdf388449f60bbf67abec88ad "pdflatex"
+  "SudoSLVRR.aux" 1772269735 5910 64499f6bea688887ddb440ce7aeb74c8 "pdflatex"
   "SudoSLVRR.tex" 1772266454 7503 4dafefde8516691c91f20525cd2fa659 ""
   "c:/Users/John" 1755480650 19047 00c3fb1e8db063761073164ffd55ac61 ""
   "c:/Users/John Michael Jabuen/Documents/Soduko Solver/Conference-Paper/SudoSLVRR.tex" 1772266454 7503 4dafefde8516691c91f20525cd2fa659 ""
@@ -100,8 +100,8 @@
   "images/Topologies.png" 1772253725 288947 3b9b8a90bc4d9cdd9d6e9f7205eb0736 ""
   "sections/conclusions.tex" 1772261085 738 ebf00bf0cdaca3e8fb9479a521877799 ""
   "sections/introduction.tex" 1772266497 3246 7d277bd233f4ae6dc5dcf58da8d9644b ""
-  "sections/results_discussion.tex" 1772265111 8637 d3648ab10daaeffde1c057092ed73b82 ""
-  "sections/sudoslvr_algorithm.tex" 1772264901 20420 e12968b2825d5fa26400cb40dbdd1141 ""
+  "sections/results_discussion.tex" 1772269734 8666 e118dd7a603cefd379df86ce58dd7472 ""
+  "sections/sudoslvr_algorithm.tex" 1772267241 20439 140a0ef37eef5e11bc9beb31457d8c41 ""
   (generated)
   "SudoSLVRR.aux"
   "SudoSLVRR.log"
