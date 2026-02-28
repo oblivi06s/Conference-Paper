@@ -149,6 +149,11 @@ INPUT .\sections\results_discussion.tex
 INPUT .\sections\results_discussion.tex
 INPUT .\sections\results_discussion.tex
 INPUT sections\results_discussion.tex
+INPUT C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx9.tfm
+INPUT C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
+INPUT C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
+INPUT C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+INPUT C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx7.tfm
 INPUT .\sections\conclusions.tex
 INPUT .\sections\conclusions.tex
 INPUT .\sections\conclusions.tex
@@ -181,6 +186,8 @@ INPUT C:\Users\John Michael Jabuen\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen
 INPUT C:\Users\John Michael Jabuen\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
 INPUT C:\Users\John Michael Jabuen\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
 INPUT C:\Users\John Michael Jabuen\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
+INPUT C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx9.pfb
+INPUT C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx9.pfb
 INPUT C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb

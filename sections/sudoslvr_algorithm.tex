@@ -3,7 +3,7 @@
 \begin{algorithm}[htbp]
 \LinesNumbered
 \footnotesize
-\caption{SudoPHASE (Part 1)}
+\caption{SudoSLVRR (Part 1)}
 \label{alg:mtcpacssaalgo_part1}
 \KwIn{Sudoku puzzle $P$}
 \KwIn{Parameters: $\tau_0$, $E(p)*$, $Con*$, $timeout$}
@@ -87,7 +87,7 @@ $iter \leftarrow 0$\;
 \footnotesize
 \addtocounter{algocf}{-1} % Prevents the Algorithm number from increasing (Keeps it as Algorithm 1)
 \setcounter{AlgoLine}{53} % Resumes the line numbering (Adjust this number if your lines shift!)
-\caption{SudoPHASE (continued)}
+\caption{SudoSLVRR (continued)}
 \label{alg:mtcpacssaalgo_part2}
 
 \While{puzzle is not solved \textbf{and} timeout not reached (continued)}{
@@ -262,7 +262,7 @@ The maximum pheromone concentration a cell-value assignment can accumulate is on
                     \centering
                     \caption{Common cell-value assignments (public path) for the first row are highlighted with red box.}\label{public_path}
                 \end{figure}
-            \vspace{-0.8cm}
+            
             This mechanism is triggered when the computed convergence rate ($con_t$) of the MMAS colony falls below the predefined convergence threshold ($con^*$), denoted as ($con_t < con^*$). 
                 \begin{equation}
                     con_t = \frac{iter_{opt}}{iter_t}
@@ -291,7 +291,7 @@ The maximum pheromone concentration a cell-value assignment can accumulate is on
         \caption{Ring and Random-matching Communication Topologies}\label{topologies}
     \end{figure}
 
-    Adapted from~\cite{yang2015},this solver implements two communication topologies as shown in Figure\ref{topologies}. It is important to note here that the master thread does not collect solutions from other threads but only generates an array containing a random sequence of the thread IDs. In this communication, pheromone information are shared but not through exchanging the entire pheromone matrix as it increases communication overhead between threads according to Yang and Fang~\cite{yang2015}, instead only the path information is exchanged. Each thread waits at the barrier when the communication interval is reached. Each one of them receives two solutions from other threads. It then uses these to do the \textbf{Three-Source Communication Global Pheromone Update}.
+    Adapted from~\cite{yang2015},this solver implements two communication topologies as shown in Figure\ref{topologies}. It is important to note here that the master thread does not collect solutions from other threads but only generates an array containing a random sequence of the thread IDs. In this communication, pheromone information are shared but not through exchanging the entire pheromone matrix as it increases communication overhead between threads according to Yang and Fang~\cite{yang2015}, instead only the path information is exchanged. Each thread waits at the barrier when the communication interval is reached. Each one of them receives two solutions from other threads. It then uses these to do the three-source communication global pheromone update.
     \begin{equation}
             \Delta \tau_{ij} = \Delta \tau^{(1)}_{ij} + \Delta \tau^{(2)}_{ij} + \Delta \tau^{(3)}_{ij}
             \label{eqn:accum}
