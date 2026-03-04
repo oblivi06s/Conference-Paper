@@ -3,71 +3,73 @@
 \citation{norvig2006solving,Schott,bhattarai2025study,is2012techniques}
 \citation{crook2009pencil,bhattarai2025study}
 \citation{pacurib2009}
-\citation{lloyd2020}
 \citation{PSO,GPSO}
 \citation{lloyd2020}
-\citation{norvig2006solving}
+\citation{norvig2006solving,lloyd2020}
 \providecommand \oddpage@label [2]{}
 \@writefile{toc}{\contentsline {title}{SudoSLVRR: A Multithreaded Multi-Colony Ant Optimization with Ring and Random Communication Topologies as Sudoku Solver}{1}{}\protected@file@percent }
 \@writefile{toc}{\authcount {3}}
 \@writefile{toc}{\contentsline {author}{John Michael E. Jabuen \and Gian Myrl Renomeron \and \unskip \ \ignorespaces John Paul T. Yusiong}{1}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{}\protected@file@percent }
-\citation{dorigo1992}
-\citation{dorigo1992}
-\citation{dorigo2004ant}
+\citation{lloyd2020}
 \citation{mo2022}
 \citation{yang2015}
+\citation{lloyd2020}
+\citation{dorigo2004ant}
+\citation{mo2022}
+\citation{dorigo2004ant}
+\citation{yang2015}
 \citation{randall2002}
-\@writefile{toc}{\contentsline {section}{\numberline {2}SudoSLVRR: Algorithm Design and Structure}{2}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Initial Constraint Propagation}{2}{}\protected@file@percent }
-\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces SudoSLVRR (Part 1)}}{3}{}\protected@file@percent }
-\newlabel{alg:mtcpacssaalgo_part1}{{1}{3}{}{algocf.1}{}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces SudoSLVRR (continued)}}{4}{}\protected@file@percent }
-\newlabel{alg:mtcpacssaalgo_part2}{{1}{4}{}{algocf.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces AI Escargot Sudoku puzzle (left), and the result after CP (right). The value sets are represented as strings of allowable digit for a certain cell. For example, `2568' represents the set of values 2,5,6,8.}}{4}{}\protected@file@percent }
-\newlabel{CP_output}{{1}{4}{}{figure.1}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}DCM-ACO}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}SudoSLVRR: Algorithm Design and Structure}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Initial Constraint Propagation}{3}{}\protected@file@percent }
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces SudoSLVRR (Part 1)}}{4}{}\protected@file@percent }
+\newlabel{alg:mtcpacssaalgo_part1}{{1}{4}{}{algocf.1}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces SudoSLVRR (continued)}}{5}{}\protected@file@percent }
+\newlabel{alg:mtcpacssaalgo_part2}{{1}{5}{}{algocf.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces AI Escargot Sudoku puzzle (left), and the result after CP (right). The value sets are represented as strings of allowable digit for a certain cell. For example, `2568' represents the set of values 2,5,6,8.}}{5}{}\protected@file@percent }
+\newlabel{CP_output}{{1}{5}{}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}DCM-ACO}{5}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsubsection}{Pheromone Matrix Initialization}{5}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Ant Solution Construction}{5}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Ant Decision Rule}{5}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Propagate Constraints}{5}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Local Pheromone Update}{5}{}\protected@file@percent }
-\newlabel{eqn:localpheromoneupdate}{{2}{5}{}{equation.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Ant Solution Construction}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Ant Decision Rule}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Propagate Constraints}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Local Pheromone Update}{6}{}\protected@file@percent }
+\newlabel{eqn:localpheromoneupdate}{{2}{6}{}{equation.2}{}}
 \@writefile{toc}{\contentsline {subsubsection}{Solution Evaluation and Iteration-Best Selection}{6}{}\protected@file@percent }
-\newlabel{eqn:iteration-best-ant}{{3}{6}{}{equation.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Pheromone Contribution Calculation}{6}{}\protected@file@percent }
-\newlabel{eqn:phertoadd}{{4}{6}{}{equation.4}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Standard Global Pheromone Update}{6}{}\protected@file@percent }
-\newlabel{eqn:stdglobalupdate}{{5}{6}{}{equation.5}{}}
-\newlabel{eq:best_evaporation}{{6}{6}{}{equation.6}{}}
-\newlabel{eg:tau_max}{{7}{6}{}{equation.7}{}}
-\newlabel{eg:tau_min}{{8}{6}{}{equation.8}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Dynamic Collaborative Mechanism}{7}{}\protected@file@percent }
-\newlabel{eqn:coop_game_1}{{9}{7}{}{equation.9}{}}
-\newlabel{eqn:coop_game_2}{{10}{7}{}{equation.10}{}}
-\newlabel{eqn:coop_game_3}{{11}{7}{}{equation.11}{}}
-\newlabel{eqn:coop_game_4}{{12}{7}{}{equation.12}{}}
-\newlabel{eqn:coop_game_5}{{13}{7}{}{equation.13}{}}
-\newlabel{eqn:coop_game_6}{{14}{7}{}{equation.14}{}}
-\newlabel{eqn:pher_fus_1}{{15}{8}{}{equation.15}{}}
-\newlabel{eqn:pher_fus_2}{{16}{8}{}{equation.16}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Common cell-value assignments (public path) for the first row are highlighted with red box.}}{8}{}\protected@file@percent }
-\newlabel{public_path}{{2}{8}{}{figure.2}{}}
-\newlabel{eqn:public_path_1}{{17}{8}{}{equation.17}{}}
-\newlabel{eqn:public_path_2}{{18}{8}{}{equation.18}{}}
+\newlabel{eqn:iteration-best-ant}{{3}{7}{}{equation.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Pheromone Contribution Calculation}{7}{}\protected@file@percent }
+\newlabel{eqn:phertoadd}{{4}{7}{}{equation.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Standard Global Pheromone Update}{7}{}\protected@file@percent }
+\newlabel{eqn:stdglobalupdate}{{5}{7}{}{equation.5}{}}
+\newlabel{eq:best_evaporation}{{6}{7}{}{equation.6}{}}
+\newlabel{eg:tau_max}{{7}{7}{}{equation.7}{}}
+\newlabel{eg:tau_min}{{8}{7}{}{equation.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Dynamic Collaborative Mechanism}{8}{}\protected@file@percent }
+\newlabel{eqn:coop_game_1}{{9}{8}{}{equation.9}{}}
+\newlabel{eqn:coop_game_2}{{10}{8}{}{equation.10}{}}
+\newlabel{eqn:coop_game_3}{{11}{8}{}{equation.11}{}}
+\newlabel{eqn:coop_game_4}{{12}{8}{}{equation.12}{}}
+\newlabel{eqn:coop_game_5}{{13}{8}{}{equation.13}{}}
+\newlabel{eqn:coop_game_6}{{14}{8}{}{equation.14}{}}
+\newlabel{eqn:pher_fus_1}{{15}{9}{}{equation.15}{}}
+\newlabel{eqn:pher_fus_2}{{16}{9}{}{equation.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Common cell-value assignments (public path) for the first row are highlighted with red box.}}{9}{}\protected@file@percent }
+\newlabel{public_path}{{2}{9}{}{figure.2}{}}
+\newlabel{eqn:public_path_1}{{17}{9}{}{equation.17}{}}
+\newlabel{eqn:public_path_2}{{18}{9}{}{equation.18}{}}
 \citation{yang2015}
 \citation{yang2015}
-\newlabel{eqn:public_path_3}{{19}{9}{}{equation.19}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Thread Communication}{9}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Ring and Random-matching Communication Topologies}}{9}{}\protected@file@percent }
-\newlabel{topologies}{{3}{9}{}{figure.3}{}}
-\newlabel{eqn:accum}{{20}{9}{}{equation.20}{}}
-\newlabel{eqn:accum_update}{{21}{9}{}{equation.21}{}}
+\newlabel{eqn:public_path_3}{{19}{10}{}{equation.19}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Thread Communication}{10}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Ring and Random-matching Communication Topologies}}{10}{}\protected@file@percent }
+\newlabel{topologies}{{3}{10}{}{figure.3}{}}
+\newlabel{eqn:accum}{{20}{10}{}{equation.20}{}}
+\newlabel{eqn:accum_update}{{21}{10}{}{equation.21}{}}
 \bibcite{dorigo1992}{1}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Results and Discussion}{10}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusions and Future Work}{10}{}\protected@file@percent }
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Success rates (number of solved instances out of 100 runs) together with solution times (reported as mean and standard deviation over successful runs) for the Sudoku instances. The evaluated methods include Constraint Propagation and Ant Colony System (CA), CP-DCM-ACO (CD), and the multithreaded variant of CP-DCM-ACO (MCD). The size parameter indicates the puzzle order: 3 corresponds to \(9 \times 9\), 4 to \(16 \times 16\), and 5 to \(25 \times 25\). Best values are highlighted in bold (time and iterations obtained by algorithms with the highest success rate are compared).}}{11}{}\protected@file@percent }
-\newlabel{tab:results}{{1}{11}{}{table.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Results and Discussion}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusions and Future Work}{11}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Success rates (number of solved instances out of 100 runs) together with solution times (reported as mean and standard deviation over successful runs) for the Sudoku instances. The evaluated methods include Constraint Propagation and Ant Colony System (CA), CP-DCM-ACO (CD), and the multithreaded variant of CP-DCM-ACO (MCD). The size parameter indicates the puzzle order: 3 corresponds to \(9 \times 9\), 4 to \(16 \times 16\), and 5 to \(25 \times 25\). Best values are highlighted in bold (time and iterations obtained by algorithms with the highest success rate are compared).}}{12}{}\protected@file@percent }
+\newlabel{tab:results}{{1}{12}{}{table.1}{}}
 \bibcite{yang2015}{2}
 \bibcite{lloyd2020}{3}
 \bibcite{mo2022}{4}
@@ -84,4 +86,4 @@
 \bibcite{Schott}{15}
 \bibcite{GPSO}{16}
 \bibcite{bhattarai2025study}{17}
-\gdef \@abspage@last{12}
+\gdef \@abspage@last{13}
