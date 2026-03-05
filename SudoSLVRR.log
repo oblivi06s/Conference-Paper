@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2026.1.14)  4 MAR 2026 12:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2026.1.14)  5 MAR 2026 10:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -395,33 +395,33 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 \c@lstlisting=\count352
  (sections/introduction.tex [1
 
-{C:/Users/renom/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]) (sections/related_works.tex [2]) (sections/sudoslvr_algorithm.tex
+{C:/Users/renom/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]) (sections/related_works.tex) (sections/sudoslvr_algorithm.tex
 
 LaTeX Warning: Float too large for page by 72.42427pt on input line 82.
 
-<images/CP_Output.png, id=20, 839.135pt x 423.5825pt>
+<images/CP_Output.png, id=16, 839.135pt x 423.5825pt>
 File: images/CP_Output.png Graphic file (type png)
 <use images/CP_Output.png>
 Package pdftex.def Info: images/CP_Output.png  used on input line 116.
 (pdftex.def)             Requested size: 242.98541pt x 122.6548pt.
-[3] [4] [5 <./images/CP_Output.png>] [6]
+[2] [3] [4 <./images/CP_Output.png>] [5]
 Overfull \hbox (13.52446pt too wide) in paragraph at lines 161--161
  \T1/cmr/bx/n/10 Pheromone Con-tri-bu-tion Cal-cu-la-tion[] \T1/cmr/m/n/10 The al-go-rithm cal-cu-lates the pheromone
  []
 
-[7] [8]
-<images/Public_Path.png, id=57, 914.41624pt x 312.16624pt>
+[6] [7]
+<images/Public_Path.png, id=54, 914.41624pt x 312.16624pt>
 File: images/Public_Path.png Graphic file (type png)
 <use images/Public_Path.png>
 Package pdftex.def Info: images/Public_Path.png  used on input line 261.
 (pdftex.def)             Requested size: 242.98541pt x 82.94753pt.
- [9 <./images/Public_Path.png>]
-<images/Topologies.png, id=62, 1125.20375pt x 378.41376pt>
+ [8 <./images/Public_Path.png>]
+<images/Topologies.png, id=59, 1125.20375pt x 378.41376pt>
 File: images/Topologies.png Graphic file (type png)
 <use images/Topologies.png>
 Package pdftex.def Info: images/Topologies.png  used on input line 289.
 (pdftex.def)             Requested size: 242.98541pt x 81.71536pt.
-) (sections/results_discussion.tex [10 <./images/Topologies.png>]) (sections/conclusions.tex) [11] [12]
+) (sections/results_discussion.tex [9 <./images/Topologies.png>]) (sections/conclusions.tex) [10] [11]
 Underfull \hbox (badness 2165) in paragraph at lines 92--93
 []\T1/cmr/m/n/9 Y. Manyam, S. Sun-daram, and A. Sa-hay, ``Su-doku Solver Al-go-rithms: A
  []
@@ -461,7 +461,7 @@ Underfull \hbox (badness 1132) in paragraph at lines 126--127
 \T1/cmr/m/it/9 netic and Evo-lu-tion-ary Com-pu-ta-tion\T1/cmr/m/n/9 , 2007, pp. 118--125. [On-line]. Avail-able:
  []
 
-[13] (SudoSLVRR.aux)
+[12] (SudoSLVRR.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
@@ -476,9 +476,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  57i,27n,65p,1321b,750s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi0900.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0900.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0700.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0900.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on SudoSLVRR.pdf (13 pages, 500007 bytes).
+Output written on SudoSLVRR.pdf (12 pages, 497384 bytes).
 PDF statistics:
- 603 PDF objects out of 1000 (max. 8388607)
+ 600 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
