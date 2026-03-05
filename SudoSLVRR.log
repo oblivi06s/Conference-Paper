@@ -1,18 +1,27 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2026.1.14)  5 MAR 2026 10:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.11)  5 MAR 2026 18:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/renom/OneDrive/Desktop/Thesis/Conference-Paper/SudoSLVRR.tex
-(c:/Users/renom/OneDrive/Desktop/Thesis/Conference-Paper/SudoSLVRR.tex
+**"c:/Users/John Michael Jabuen/Documents/Soduko Solver/Conference-Paper/SudoSL
+VRR.tex"
+
+(c:/Users/John Michael Jabuen/Documents/Soduko Solver/Conference-Paper/SudoSLVR
+R.tex
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-11-06>
-(C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/llncs\llncs.cls
+L3 programming layer <2025-10-24>
+
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/llncs\lln
+cs.cls
 Document Class: llncs 2025/02/25 v2.26 
  LaTeX document class for Lecture Notes in Computer Science
-(C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/base\arti
+cle.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
-(C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/base\size
+10.clo
 File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
@@ -26,7 +35,9 @@ File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
-) (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+)
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/tools\mul
+ticol.sty
 Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \c@tracingmulticols=\count283
 \mult@box=\box53
@@ -96,7 +107,9 @@ Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \colbreak@box=\box98
 \mc@col@check@num=\count292
 \g__mc_curr_col_int=\count293
-) (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/oberdiek\aliascnt.sty
+)
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/oberdiek\
+aliascnt.sty
 Package: aliascnt 2018/09/07 v1.5 Alias counters (HO)
 )
 \c@chapter=\count294
@@ -150,48 +163,74 @@ LaTeX Info: Redefining \vec on input line 394.
 \c@solution=\count312
 \c@remark=\count313
 \headlineindent=\dimen170
-) (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+)
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/base\font
+enc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-) (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+)
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/float\flo
+at.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count314
 \float@exts=\toks21
 \float@box=\box101
 \@float@everytoks=\toks22
 \@floatcapt=\box102
-) (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+)
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/graphics\
+graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/graphics\
+keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks23
-) (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+)
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/graphics\
+graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/graphics\
+trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+)
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/graphics-
+cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
- (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/graphics-
+def\pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen171
 \Gin@req@width=\dimen172
-) (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+)
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\a
+msmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip53
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\a
+mstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
- (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\a
+msgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks24
 \ex@=\dimen173
-)) (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+))
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\a
+msbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen174
-) (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+)
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\a
+msopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count315
@@ -245,19 +284,29 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks28
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
-) (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/algorithm2e\algorithm2e.sty
+)
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/algorithm
+2e\algorithm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
 \c@AlgoLine=\count327
- (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/base\ifth
+en.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
 \algocf@hangindent=\skip56
- (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage
+\ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 \c@checkoddpage=\count328
-) (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
+)
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/tools\xsp
+ace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-) (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/relsize\relsize.sty
+)
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/relsize\r
+elsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
 \skiptotal=\skip57
@@ -295,38 +344,176 @@ Package: relsize 2013/03/29 ver 4.1
 \c@algocf=\count331
 \algocf@algoframe=\box111
 \algocf@algobox=\box112
-) (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+)
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/listings\
+listings.sty \lstset,
 \lst@mode=\count332
+ 
+new hook `InitVars',
+
+new hook `EndGroup',
+
+new hook `ExitVars',
+
+new hook `ModeTrue',
+
+new hook `EOL',
 \lst@gtempboxa=\box113
 \lst@token=\toks29
 \lst@length=\count333
+
+new hook `InitVarsBOL',
 \lst@currlwidth=\dimen188
 \lst@column=\count334
 \lst@pos=\count335
 \lst@lostspace=\dimen189
 \lst@width=\dimen190
+basewidth, 
+new hook `FontAdjust',
+fontadjust, 
+new hook `PostOutput',
+
+new hook `OutputBox',
+
+new hook `InitBOL',
+columns, flexiblecolumns,
 \lst@newlines=\count336
+ 
+new hook `OnNewLine',
+emptylines, 
+new hook `OnEmptyLine',
+identifierstyle, 
+new hook `EmptyStyle',
+
+new hook `OutputOther',
+
+new hook `Output',
+tabsize, showtabs, tab, showspaces, keepspaces, 
+new hook `Init',
+formfeed, upquote, SelectCharTable, MoreSelectCharTable,
+
+new hook `SetLanguage',
+extendedchars, useoutput, rescanchars, alsoletter, alsodigit, alsoother,
+
+new hook `SelectCharTable',
+excludedelims, delim, moredelim, deletedelim, literate, basicstyle,
+inputencoding, multicols, 
+new hook `EveryLine',
 \lst@lineno=\count337
+print, firstline, lastline, 
+new hook `PreSet',
+nolol, linerange, consecutivenumbers, rangeprefix, rangesuffix,
+rangebeginprefix, rangebeginsuffix, rangeendprefix, rangeendsuffix,
+includerangemarker, 
+new hook `DeInit',
+captionpos, abovecaptionskip, belowcaptionskip, label, title, caption,
+
+new hook `TextStyle',
+\lstlistingname, \lstlistingnamestyle, numberbychapter, boxpos, float,
+floatplacement, aboveskip, belowskip, everydisplay, 
+new hook `DisplayStyle',
+
+new hook `PreInit',
+
+new hook `EveryPar',
+showlines,
 \lst@maxwidth=\dimen191
- (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
-File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
-) (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+ 
+new hook `InitVarsEOL',
+gobble, name, \lstlistlistingname, \lstlistoflistings, inputpath,
+\lstnewenvironment, fancyvrb,
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/listings\
+lstpatch.sty
+File: lstpatch.sty 2025/10/06 1.11 (Carsten Heinz)
+)
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/listings\
+lstmisc.sty
+File: lstmisc.sty 2025/10/06 1.11 (Carsten Heinz)
+ 
+Define lst-aspect `strings': string, morestring, deletestring, stringstyle,
+showstringspaces, 
+new hook `ExcludeDelims',
+
+Allocs: none
+
+Define lst-aspect `comments': comment, morecomment, deletecomment,
+commentstyle, 
+new hook `AfterBeginComment',
+
+Allocs: none
+
+Define lst-aspect `escape': texcl, escapebegin, escapeend, escapechar,
+escapeinside, mathescape, 
+Allocs: none
+
+Define lst-aspect `keywords': sensitive, 
+new hook `TrackKeywords',
+
+new hook `PostTrackKeywords',
+
+new hook `DetectKeywords',
+classoffset, keywords, morekeywords, deletekeywords, keywordstyle,
+keywordstyle, ndkeywords, morendkeywords, deletendkeywords, ndkeywordstyle,
+keywordsprefix, otherkeywords, 
+Allocs: none
+
+Define lst-aspect `emph': emph, moreemph, deleteemph, emphstyle, 
+Allocs: none
+
+Define lst-aspect `index': index, moreindex, deleteindex, indexstyle,
+\lstindexmacro, 
+Allocs: none
+
+Define lst-aspect `style': \lststylefiles, \lstdefinestyle, \lst@definestyle,
+style, 
+new hook `SetStyle',
+
+Allocs: none
+
+Define lst-aspect `language': \lstlanguagefiles, \lstdefinelanguage,
+\lst@definelanguage, language, alsolanguage, \lstalias, defaultdialect,
+
+Allocs: none
+
+Define lst-aspect `labels': numbers, stepnumber, numberfirstline, numberstyle,
+numbersep, numberblanklines, firstnumber,
 \c@lstnumber=\count338
 \lst@skipnumbers=\count339
+ 
+Allocs: 2\count, 
+
+Define lst-aspect `lineshape': xleftmargin, xrightmargin, resetmargins,
+
+new hook `BoxUnsafe',
+linewidth, lineskip, breaklines, breakindent, breakautoindent,
+breakatwhitespace, prebreak, postbreak, 
+Allocs: none
+
+Define lst-aspect `frames': framexleftmargin, framexrightmargin,
+framextopmargin, framexbottommargin, backgroundcolor, fillcolor, rulecolor,
+rulesepcolor, rulesep, framerule, framesep, frameshape, frameround, frame,
 \lst@framebox=\box114
-) (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
-File: listings.cfg 2025/11/14 1.11b listings configuration
+
+
+Allocs: 1\box, 
+) 
+Allocs: 8\count, 4\dimen, 2\box, 1\toks, 
+
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/listings\
+listings.cfg
+File: listings.cfg 2025/10/06 1.11 listings configuration
 ))
-Package: listings 2025/11/14 1.11b (Carsten Heinz)
+Package: listings 2025/10/06 1.11 (Carsten Heinz)
 
 ==> First Aid for listings.sty no longer applied!
     Expected:
         2024/09/23 1.10c (Carsten Heinz)
     but found:
-        2025/11/14 1.11b (Carsten Heinz)
+        2025/10/06 1.11 (Carsten Heinz)
     so I'm assuming it got fixed.
-(C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\
+booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen192
 \lightrulewidth=\dimen193
@@ -345,15 +532,21 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count342
 \@lastruleclass=\count343
 \@thisrulewidth=\dimen260
-) (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+)
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/multirow\
+multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip75
 \multirow@cntb=\count344
 \multirow@dima=\skip76
 \bigstrutjot=\dimen261
-) (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2025/11/14 1.11b listings language file
-) (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+)
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/listings\
+lstlang1.sty
+File: lstlang1.sty 2025/10/06 1.11 listings language file
+)
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/l3backend
+\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count345
 ) (SudoSLVRR.aux)
@@ -373,7 +566,9 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
 LaTeX Font Info:    ... okay on input line 30.
- (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/context/base/mk
+ii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count346
 \scratchdimen=\dimen262
@@ -386,99 +581,168 @@ LaTeX Font Info:    ... okay on input line 30.
 \MPnumerator=\count350
 \makeMPintoPDFobject=\count351
 \everyMPtoPDFconversion=\toks31
-) (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+)
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-
+pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Users\renom\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\John Michael Jabuen\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\
+epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \c@lstlisting=\count352
- (sections/introduction.tex [1
 
-{C:/Users/renom/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]) (sections/related_works.tex) (sections/sudoslvr_algorithm.tex
+Overfull \hbox (11.59985pt too wide) in paragraph at lines 53--54
+\T1/cmr/m/n/9 colony ACO frame-work that in-te-grates con-straint prop-a-ga-tio
+n with entropy-
+ []
+
+(sections/introduction.tex [1
+
+{C:/Users/John Michael Jabuen/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+]) (sections/related_works.tex
+Overfull \hbox (2.67993pt too wide) in paragraph at lines 6--1
+\T1/cmr/m/n/10 plus random-matching ex-changes han-dling co-or-di-na-tion acros
+s threads. We tested
+ []
+
+) (sections/sudoslvr_algorithm.tex
 
 LaTeX Warning: Float too large for page by 72.42427pt on input line 82.
 
-<images/CP_Output.png, id=16, 839.135pt x 423.5825pt>
-File: images/CP_Output.png Graphic file (type png)
-<use images/CP_Output.png>
-Package pdftex.def Info: images/CP_Output.png  used on input line 116.
-(pdftex.def)             Requested size: 242.98541pt x 122.6548pt.
-[2] [3] [4 <./images/CP_Output.png>] [5]
-Overfull \hbox (13.52446pt too wide) in paragraph at lines 161--161
- \T1/cmr/bx/n/10 Pheromone Con-tri-bu-tion Cal-cu-la-tion[] \T1/cmr/m/n/10 The al-go-rithm cal-cu-lates the pheromone
+<images/CP_Final_Image.png, id=16, 491.63266pt x 188.04948pt>
+File: images/CP_Final_Image.png Graphic file (type png)
+<use images/CP_Final_Image.png>
+Package pdftex.def Info: images/CP_Final_Image.png  used on input line 114.
+(pdftex.def)             Requested size: 347.12354pt x 132.77574pt.
+[2] [3]
+<images/DCM-ACO.png, id=32, 764.8575pt x 704.6325pt>
+File: images/DCM-ACO.png Graphic file (type png)
+<use images/DCM-ACO.png>
+Package pdftex.def Info: images/DCM-ACO.png  used on input line 124.
+(pdftex.def)             Requested size: 173.56177pt x 159.8902pt.
+ [4 <./images/CP_Final_Image.png>] [5 <./images/DCM-ACO.png>]
+Overfull \hbox (13.52446pt too wide) in paragraph at lines 168--168
+ \T1/cmr/bx/n/10 Pheromone Con-tri-bu-tion Cal-cu-la-tion[] \T1/cmr/m/n/10 The 
+al-go-rithm cal-cu-lates the pheromone
  []
 
 [6] [7]
 <images/Public_Path.png, id=54, 914.41624pt x 312.16624pt>
 File: images/Public_Path.png Graphic file (type png)
 <use images/Public_Path.png>
-Package pdftex.def Info: images/Public_Path.png  used on input line 261.
+Package pdftex.def Info: images/Public_Path.png  used on input line 264.
 (pdftex.def)             Requested size: 242.98541pt x 82.94753pt.
  [8 <./images/Public_Path.png>]
-<images/Topologies.png, id=59, 1125.20375pt x 378.41376pt>
+<images/Topologies.png, id=61, 1125.20375pt x 378.41376pt>
 File: images/Topologies.png Graphic file (type png)
 <use images/Topologies.png>
-Package pdftex.def Info: images/Topologies.png  used on input line 289.
+Package pdftex.def Info: images/Topologies.png  used on input line 292.
 (pdftex.def)             Requested size: 242.98541pt x 81.71536pt.
-) (sections/results_discussion.tex [9 <./images/Topologies.png>]) (sections/conclusions.tex) [10] [11]
-Underfull \hbox (badness 2165) in paragraph at lines 92--93
-[]\T1/cmr/m/n/9 Y. Manyam, S. Sun-daram, and A. Sa-hay, ``Su-doku Solver Al-go-rithms: A
+ [9 <./images/Topologies.png>])
+(sections/results_discussion.tex) (sections/conclusions.tex) [10] [11]
+Underfull \hbox (badness 2165) in paragraph at lines 91--92
+[]\T1/cmr/m/n/9 Y. Manyam, S. Sun-daram, and A. Sa-hay, ``Su-doku Solver Al-go-
+rithms: A
  []
 
 
-Underfull \hbox (badness 1975) in paragraph at lines 92--93
-\T1/cmr/m/n/9 Com-par-a-tive Anal-y-sis,'' in \T1/cmr/m/it/9 2024 First In-ter-na-tional Con-fer-ence for Women
+Underfull \hbox (badness 1975) in paragraph at lines 91--92
+\T1/cmr/m/n/9 Com-par-a-tive Anal-y-sis,'' in \T1/cmr/m/it/9 2024 First In-ter-
+na-tional Con-fer-ence for Women
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--93
-\T1/cmr/m/it/9 in Com-put-ing (In-CoWoCo)\T1/cmr/m/n/9 , IEEE, 2024, pp. 1--9. [On-line]. Avail-able:
+Underfull \hbox (badness 10000) in paragraph at lines 91--92
+\T1/cmr/m/it/9 in Com-put-ing (In-CoWoCo)\T1/cmr/m/n/9 , IEEE, 2024, pp. 1--9. 
+[On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 7486) in paragraph at lines 110--111
-[]\T1/cmr/m/n/9 E. C. Chi, ``Tech-niques for Solv-ing Su-doku Puz-zles,'' \T1/cmr/m/it/9 arXiv preprint
+Underfull \hbox (badness 7486) in paragraph at lines 109--110
+[]\T1/cmr/m/n/9 E. C. Chi, ``Tech-niques for Solv-ing Su-doku Puz-zles,'' \T1/c
+mr/m/it/9 arXiv preprint
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
-[]\T1/cmr/m/n/9 P. Norvig, ``Solv-ing Ev-ery Su-doku Puz-zle,'' 2006. [On-line]. Avail-able:
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
+[]\T1/cmr/m/n/9 P. Norvig, ``Solv-ing Ev-ery Su-doku Puz-zle,'' 2006. [On-line]
+. Avail-able:
  []
 
 
-Underfull \hbox (badness 1783) in paragraph at lines 126--127
-[]\T1/cmr/m/n/9 A. Moraglio and J. To-gelius, ``Ge-o-met-ric par-ti-cle swarm op-ti-miza-tion for
+Underfull \hbox (badness 1783) in paragraph at lines 125--126
+[]\T1/cmr/m/n/9 A. Moraglio and J. To-gelius, ``Ge-o-met-ric par-ti-cle swarm o
+p-ti-miza-tion for
  []
 
 
-Underfull \hbox (badness 1831) in paragraph at lines 126--127
-\T1/cmr/m/n/9 the su-doku puz-zle,'' in \T1/cmr/m/it/9 Pro-ceed-ings of the 9th An-nual Con-fer-ence on Ge-
+Underfull \hbox (badness 1831) in paragraph at lines 125--126
+\T1/cmr/m/n/9 the su-doku puz-zle,'' in \T1/cmr/m/it/9 Pro-ceed-ings of the 9th
+ An-nual Con-fer-ence on Ge-
  []
 
 
-Underfull \hbox (badness 1132) in paragraph at lines 126--127
-\T1/cmr/m/it/9 netic and Evo-lu-tion-ary Com-pu-ta-tion\T1/cmr/m/n/9 , 2007, pp. 118--125. [On-line]. Avail-able:
+Underfull \hbox (badness 1132) in paragraph at lines 125--126
+\T1/cmr/m/it/9 netic and Evo-lu-tion-ary Com-pu-ta-tion\T1/cmr/m/n/9 , 2007, pp
+. 118--125. [On-line]. Avail-able:
  []
 
 [12] (SudoSLVRR.aux)
  ***********
 LaTeX2e <2025-11-01>
-L3 programming layer <2025-11-06>
+L3 programming layer <2025-10-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5527 strings out of 467871
- 85107 string characters out of 5418376
- 765535 words of memory out of 5000000
- 34329 multiletter control sequences out of 15000+600000
+ 5537 strings out of 467871
+ 86756 string characters out of 5411563
+ 765762 words of memory out of 5000000
+ 34339 multiletter control sequences out of 15000+600000
  644572 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,27n,65p,1321b,750s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi0900.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0900.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0700.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0900.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\renom\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/renom/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on SudoSLVRR.pdf (12 pages, 497384 bytes).
+ 57i,28n,65p,1219b,752s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\John Michael Jabuen\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/
+ec/dpi600\ecti1000.pk> <C:\Users\John Michael Jabuen\AppData\Local\MiKTeX\fonts
+/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\John Michael Jabuen\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi0900.pk> <C:\Users\John M
+ichael Jabuen\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.
+pk> <C:\Users\John Michael Jabuen\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
+/ec/dpi600\ecti0900.pk> <C:\Users\John Michael Jabuen\AppData\Local\MiKTeX\font
+s/pk/ljfour/jknappen/ec/dpi600\ecbx0700.pk> <C:\Users\John Michael Jabuen\AppDa
+ta\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\John 
+Michael Jabuen\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200
+.pk> <C:\Users\John Michael Jabuen\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappe
+n/ec/dpi600\tcrm0900.pk> <C:\Users\John Michael Jabuen\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk> <C:\Users\John Michael Jabuen\AppD
+ata\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\John
+ Michael Jabuen\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm100
+0.pk> <C:\Users\John Michael Jabuen\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
+en/ec/dpi600\ecbx1440.pk><C:/Users/John Michael Jabuen/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/John Michael Jabuen/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users
+/John Michael Jabuen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmmi10.pfb><C:/Users/John Michael Jabuen/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/John Michael Jabuen/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/John Michae
+l Jabuen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb
+><C:/Users/John Michael Jabuen/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmmi9.pfb><C:/Users/John Michael Jabuen/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/John Michael Jabuen/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/Joh
+n Michael Jabuen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr6.pfb><C:/Users/John Michael Jabuen/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmr7.pfb><C:/Users/John Michael Jabuen/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/John Michael Jabuen
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Us
+ers/John Michael Jabuen/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmsy7.pfb><C:/Users/John Michael Jabuen/AppData/Local/Programs/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmsy9.pfb>
+Output written on SudoSLVRR.pdf (12 pages, 653374 bytes).
 PDF statistics:
- 600 PDF objects out of 1000 (max. 8388607)
+ 603 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

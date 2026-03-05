@@ -1,5 +1,5 @@
 \section{SudoSLVRR: Algorithm Design and Structure}
-
+To maintain solution diversity and fast convergence, the proposed solver operates in four stages: (1) initial constraint propagation for immediate pruning of search space; (2) parallel multi-colony solution construction in each independent threads; (3) dynamic collaborative mechanism highlighting entropy-regulated cooperation, and (4) periodic inter-thread communication with three-source pheromone update to share promising solutions.
 \begin{algorithm}[htbp]
 \LinesNumbered
 \footnotesize
@@ -108,18 +108,25 @@ $iter \leftarrow 0$\;
 \end{algorithm}
 
 \subsection{Initial Constraint Propagation}
-Sudoku has a large solution space and navigating through it requires time. Constraint propagation by its heuristic characteristics narrowed down the solution space. This preprocessing mechanism allows the ants from each thread to prevent wasting CPU time in trying invalid cell-value assignments. 
-
-CP removes invalid assignments using the fixed values (clues) on the puzzle. Every cell has its own candidate values and belongs to a specific row, column, and subgrid. Rule 1 collects all fixed values from a certain row, column, and subgrid and removes this set of fixed values from the candidate values of the cell's peers (cells that reside to the same row, column, and subgrid). If there is only one remaining value, CP fixes that value to that cell. The second rule is responsible for fixing hidden singles to a cell. The cell is known to have a hidden single when there is only one remaining value on its candidate values after removing all the candidate values of its peers. This process is recursively done until no further deduction can be made. By doing this, the puzzle is reduced and the search space is narrowed as the number of fixed cells has increased.
+Constraint propagation by its heuristic characteristics narrowed down the solution space. CP utilized row, column, and subgrid constraints to remove infeasible candidate values followed by the hidden single elimination. This is done recursively by CP until there is no further deduction can be made preventing the ants from wasting time on exploring invalid assignments. Figure~\ref{CP_output} illustrates how the candidate sets are reduced prior to multi-colony optimization. 
 
     \begin{figure}[H]
-        \includegraphics[width=0.7\textwidth]{images/CP_Output.png}
+        \includegraphics[width=\textwidth]{images/CP_Final_Image.png}
         \centering
-        \caption{AI Escargot Sudoku puzzle (left), and the result after CP (right). The value sets are represented as strings of allowable digit for a certain cell. For example, `2568' represents the set of values 2,5,6,8.}\label{CP_output}
+        \caption{Demonstrates candidate values elimination to narrow the search space.}\label{CP_output}
     \end{figure}
     \vspace{-0.8cm}
-\subsection{DCM-ACO}
-The multi-colony ant optimization for SudoSLVRR is composed of ACS and MMAS colonies. Ant Colony System (ACS) is known for its rapid convergence while Min-Max Ant System has its strong exploratory characteristics. Thus, the two colonies balance the exploitation and exploration mechanism of the algorithm by sharing pheromone information. 
+
+\subsection{Multi-Colony Design (DCM-ACO)}
+The multi-colony ant optimization for SudoSLVRR is composed of ACS and MMAS colonies. Figure~\ref{fig:CP-DCM-ACO} summarizes the CP-DCM-ACO structure within a single thread, where Ant Colony System (ACS) focuses on exploitation and fast convergence while Max-Min Ant System (MMAS) maintains pheromone boundaries and exploration. By combining the aggressive exploitation of the ACS colonies with the diversity-preserving exploration of the MMAS colony, the heterogeneous colony structure effectively prevents premature convergence.
+
+    \begin{figure}[H]
+        \includegraphics[width=0.5\textwidth]{images/DCM-ACO.png}
+        \centering
+        \caption{Visualizes the CP-DCM-ACO within a single thread.}\label{fig:CP-DCM-ACO}
+    \end{figure}
+    \vspace{-1.0cm}
+
 
 \subsubsection{Pheromone Matrix Initialization}
 Since the algorithm is composed of multiple colonies, it maintains a pheromone matrix for each colony $\tau{ij}$ where $i$ represents the index of the cell and $j$ represents the candidate value from the candidate set $\{ 1, 2, 3, \dots, d \}$. For a $9 \times 9$ Sudoku puzzle, $d = 9$ denotes the dimension of the Sudoku puzzle. All the values in the pheromone matrix are initialized to the same value given by 
@@ -201,14 +208,16 @@ Best Value Evaporation (BVE) is another update that MMAS colony does not perform
 The maximum pheromone concentration a cell-value assignment can accumulate is only up to $\tau_{\max}$. Conversely, $\tau_{\min}$ dictates the minimum pheromone concentration a cell-value assignment can accumulate. These global bounds prevent the algorithm from converging early to frequent cell-value assignments. 
 
 \subsubsection{Dynamic Collaborative Mechanism}
+The Dynamic Collaborative Mechanism balances solution diversity and convergence by facilitating colony cooperation through entropy-aware redistribution, pheromone fusion, and public path recommendation. 
+
 \begin{itemize}
     \item[A.] \textbf{Cooperative Game Theory}
-            This collaboration is applied only to ACS colonies where best pheromone value from each of these colonies are added to get the total pheromone income $b$:
+            This collaboration is applied only to ACS colonies where best pheromone value from each ACS colony are added to get the total pheromone income $b$:
             \begin{equation}
                     b = \sum_{i=1}^{k} \Delta \tau_{ACS}^{i}
                     \label{eqn:coop_game_1}
             \end{equation}
-            This total pheromone income is then redistributed to ACS colonies based on their contribution which depends on the solution quality of the colony’s best-so-far solution and its diversity. The diversity of the colony is being quantified using information entropy:
+            This total income is then redistributed to ACS colonies based on their contribution which depends on the solution quality and diversity. The diversity of the colony is being quantified using information entropy:
             \begin{equation} 
             P_i = \frac{k_i}{K} 
             \label{eqn:coop_game_2}
@@ -217,18 +226,14 @@ The maximum pheromone concentration a cell-value assignment can accumulate is on
             E(t) = - \sum_{i=1}^{U} P_i \log P_i
             \label{eqn:coop_game_3}
             \end{equation}
-            where $K$ is the number of ants in the ACS colony, $U$ is the number of unique solutions generated by ants, and $k_i$ represents the number of ants that generated the $i-$th unique solution. This calculation shows that the higher the entropy, the higher the diversity of the colony.
-            
-            The contribution of the $i$-th ACS colony is given by:
+            where $K$ is the number of ants in the ACS colony, $U$ is the number of unique solutions generated by ants, and $k_i$ represents the frequency of the $i-$th unique solution. A colony with high entropy is diverse, otherwise it is stagnating. The contribution of the $i$-th ACS colony is given by:
             \begin{equation}
                 \text{Contribution}_i = \text{sol}_i \cdot H(p_i)
                 \label{eqn:coop_game_4}
             \end{equation}
 
 
-            where $\text{sol}_i = \frac{\text{length}_{\min}}{\text{length}_i}$ and $H(p_i) = \frac{E(p_i)}{E(p_{\max})}$. In computing the $length$ for the solution quality of the ACS colony, we calculated the number of unfilled cells from the best-so-far solution of the ACS colony by subtracting the number of filled cells from the total number of cells. After computing the information entropy of all the ACS colonies, we set $E(p_{\max})$ to the maximum information entropy. 
-
-            After the algorithm computes the contribution of each ACS colony, it begins redistributing the total pheromone income $b$ according to their contribution. 
+            where $\text{sol}_i = \frac{\text{length}_{\min}}{\text{length}_i}$ and $H(p_i) = \frac{E(p_i)}{E(p_{\max})}$. The  $length$ represents the number of unfilled cells from the best-so-far solution of the ACS colony. The solver computes the new best pheromone value for each ACS colony by redistributing the total income $b$:
 
             \begin{equation}
                 \pi_i = \frac{\text{Contribution}_i}{\sum_{i=1}^{k} \text{Contribution}_i}
@@ -240,7 +245,7 @@ The maximum pheromone concentration a cell-value assignment can accumulate is on
                 \label{eqn:coop_game_6}
             \end{equation}
 
-            where $\Delta\tau_i^{\text{new}}$ is the new pheromone value of the $i$-th ACS colony. This new pheromone value, $\Delta\tau_i^{\text{new}}$, replaces the best pheromone value of the ACS colony and is now the value used for the standard global pheromone update. 
+            where $\Delta\tau_i^{\text{new}}$ is the new best pheromone value of the $i$-th ACS colony. 
     \item[B.] \textbf{Pheromone Fusion}
             As ACS is known for its aggressive exploitation, it is prone to early stagnation. To help the stagnating ACS colony recover, the algorithm injects MMAS pheromone information to the stagnating ACS colony. ACS colony is considered to be stagnating when its computed entropy, $E(p_i)$, falls below the predefined entropy threshold $E^*(P)$, denoted as $E(p_i) < E^*(P)$. To determine how strong the pheromone fusion is, we calculate the weight factor $\omega_i$:
             \begin{equation}
@@ -253,14 +258,12 @@ The maximum pheromone concentration a cell-value assignment can accumulate is on
                 \label{eqn:pher_fus_2}
             \end{equation}
 
-            This mechanism updates the entire pheromone matrix of the stagnating ACS colony with the injected diversity of the MMAS colony.
-
     \item[C.] \textbf{Public Path Recommendation}
             Because of the strong exploratory characteristics of the MMAS colony, it suffers from slow convergence. To assist the MMAS colony to convergence, common cell-value assignments are identified from the ACS colonies. 
                 \begin{figure}[H]
                     \includegraphics[width=0.7\textwidth]{images/Public_Path.png}
                     \centering
-                    \caption{Common cell-value assignments (public path) for the first row are highlighted with red box.}\label{public_path}
+                    \caption{Shows identification of common paths for MMAS reinforcement.}\label{public_path}
                 \end{figure}
             
             This mechanism is triggered when the computed convergence rate ($con_t$) of the MMAS colony falls below the predefined convergence threshold ($con^*$), denoted as ($con_t < con^*$). 
@@ -288,10 +291,11 @@ The maximum pheromone concentration a cell-value assignment can accumulate is on
     \begin{figure}[H]
         \includegraphics[width=0.7\textwidth]{images/Topologies.png}
         \centering
-        \caption{Ring and Random-matching Communication Topologies}\label{topologies}
+        \caption{Illustrates the inter-thread communication, highlighting ring-topology exploitation and randomized diversity injection. }\label{topologies}
     \end{figure}
 
-    Adapted from~\cite{yang2015},this solver implements two communication topologies as shown in Figure\ref{topologies}. It is important to note here that the master thread does not collect solutions from other threads but only generates an array containing a random sequence of the thread IDs. In this communication, pheromone information are shared but not through exchanging the entire pheromone matrix as it increases communication overhead between threads according to Yang and Fang~\cite{yang2015}, instead only the path information is exchanged. Each thread waits at the barrier when the communication interval is reached. Each one of them receives two solutions from other threads. It then uses these to do the three-source communication global pheromone update.
+    Adapted from Yand and Fang~\cite{yang2015} , inter-thread communication follows two complementary topologies as depicted in Figure \ref{topologies}: ring-based exchange of iteration-best for structured convergence, and randomized best-so-far exchange to diversify the global search. Instead of exchanging full pheromone matrices, only the path information are sent to minimize overhead. By pairing ring topology that propagates locally strong solutions with random matching topology that ensures cross-thread diversity, the solver prevents premature and uniform stagnation. 
+    Each thread waits at the barrier when the communication interval is reached and receives two solutions from other threads for the three-source communication global pheromone update.
     \begin{equation}
             \Delta \tau_{ij} = \Delta \tau^{(1)}_{ij} + \Delta \tau^{(2)}_{ij} + \Delta \tau^{(3)}_{ij}
             \label{eqn:accum}
@@ -301,12 +305,7 @@ The maximum pheromone concentration a cell-value assignment can accumulate is on
             \tau_{ij} = (1 - \rho)\tau_{ij} + \rho\Delta \tau_{ij}
             \label{eqn:accum_update}
     \end{equation}
-        where $\rho$ is the pheromone evaporation rate, and $\tau_{ij}$ is the pheromone value of the value $j$ to cell $i$. The total pheromone deposit $\Delta \tau_{ij}$ consists of three components:
-        \begin{enumerate}
-            \item $\Delta \tau^{(1)}_{ij}$ --- the thread’s own iteration-best solution;
-            \item $\Delta \tau^{(2)}_{ij}$ --- the received iteration-best solution from ring topology; and
-            \item $\Delta \tau^{(3)}_{ij}$ --- the received best-so-far solution from a randomly-matched neighbor.
-        \end{enumerate}
+        where $\Delta \tau^{(1)}_{ij}$ is the thread’s own iteration-best solution, $\Delta \tau^{(2)}_{ij}$ is the solution received via ring topology, and $\Delta \tau^{(3)}_{ij}$ is the best-so-far solution from a randomly-matched neighbor.
     
     Only the MMAS colony performs this update as external pheromone reinforcement to the ACS colonies may disrupt their true diversity thus disrupting also the cooperative game strategy. Although ACS colonies are not directly using this pheromone information, they are still indirectly influenced through pheromone fusion.  
 
